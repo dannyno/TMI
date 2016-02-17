@@ -21,7 +21,11 @@
  *  You should have received a copy of the GNU General Public License
  *  along with TMI.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "TMI_types.h"
 
 #ifndef TMI_H_
@@ -75,3 +79,8 @@ void TMI_display_table(int (*printFunction)(const STRING));
 UINT TMI_init(const TMI_item* pTable, UINT length);
 
 #endif /* TMI_H_ */
+
+#ifdef __cplusplus
+}
+#endif
+
